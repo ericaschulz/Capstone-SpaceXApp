@@ -1,4 +1,4 @@
 package com.s.e.SpaceXApp.models;
 
-public class Fairings {
+public class Rockets {
 }
