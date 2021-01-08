@@ -6,8 +6,8 @@ import androidx.room.InvalidationTracker;
 import androidx.room.RoomDatabase;
 import androidx.sqlite.db.SupportSQLiteOpenHelper;
 
-abstract class Database extends RoomDatabase {
-    private static final Database ourInstance = new Database() {
+abstract class XDatabase extends RoomDatabase {
+    private static final XDatabase ourInstance = new XDatabase() {
         @NonNull
         @Override
         protected SupportSQLiteOpenHelper createOpenHelper(DatabaseConfiguration config) {
@@ -26,10 +26,10 @@ abstract class Database extends RoomDatabase {
         }
     };
 
-    static Database getInstance() {
+    static XDatabase getInstance() {
         return ourInstance;
     }
 
-    private Database() {
+    private XDatabase() {
     }
 }

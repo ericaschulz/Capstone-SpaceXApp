@@ -29,7 +29,6 @@ public class SpaceXApi {
 
     }
 
-
     public XEndpoints getXEndpoint() {
         return retrofit.create( XEndpoints.class );
     }
