@@ -26,7 +26,7 @@ public interface XEndpoints {
     @GET("ships")
     Call<List<Ships>> getShips();
 
-    @GET("latest")
+    @GET("launches/latest")
     Call<List<Links>> getLinks();
 
 }

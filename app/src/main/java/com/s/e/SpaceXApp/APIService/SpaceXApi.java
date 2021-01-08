@@ -22,15 +22,12 @@ public class SpaceXApi {
 
     public SpaceXApi() {
 
-
-
         Retrofit retrofit = new retrofit2.Retrofit.Builder()
                 .baseUrl( SpaceX_BASE_URL )
                 .addConverterFactory( GsonConverterFactory.create() )
                 .build();
 
     }
-
 
 
     public XEndpoints getXEndpoint() {
@@ -57,6 +54,7 @@ public class SpaceXApi {
         } );
 
     }
+
 
     public void getCompanyInfo() {
         Call<Company> call = getXEndpoint().getCompanyInformation();
